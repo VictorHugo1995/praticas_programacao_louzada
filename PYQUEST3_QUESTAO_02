@@ -1,0 +1,13 @@
+alunos_masc  = int(input('Digite a quantidade de alunos do sexo masculino: '))
+alunos_fem   = int(input('Digite a quantidade de alunos do sexo feminino: '))
+aprovados    = int(input('Digite a quantidade de alunos aprovados: '))
+
+total_alunos = alunos_masc + alunos_fem
+
+perc_masc    = alunos_masc * 100 / total_alunos
+perc_fem     = alunos_fem * 100 / total_alunos
+perc_aprov   = aprovados * 100 / total_alunos
+
+print (perc_masc, '% dos alunos são do sexo masculino')
+print (perc_fem, '% dos alunos são do sexo feminino')
+print (perc_aprov, '% dos alunos foram aprovados')
