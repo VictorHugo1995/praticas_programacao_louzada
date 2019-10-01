@@ -1,0 +1,29 @@
+codigo = int(input('Digite o código do produto: '))
+
+while True:
+    if codigo == 100 or codigo ==  101 or codigo ==  102 or codigo ==  103:
+        break
+    else:
+        codigo = int(input('Produto não encontrado!\nDigite o código novamente '))
+
+qtde   = int(input('Digite a quantidade: '))
+
+if codigo == 100:
+    total = qtde * 5.2
+    print('CÒD |       ITEM      |  UNIT   |  VALOR')
+    print('{} | Cachorro quente | R$ 5,20 |R$ {:.2f}'.format(codigo, total))
+    
+if codigo == 101:
+    total = qtde * 5.2
+    print('CÒD |       ITEM      |  UNIT   |  VALOR')
+    print('{} |    Hambúrguer   | R$ 5,20 |R$ {:.2f}'.format(codigo, total))
+    
+if codigo == 102:
+    total = qtde * 7.3
+    print('CÒD |       ITEM      |  UNIT   |  VALOR')
+    print('{} |  Cheeseburguer  | R$ 7,30 |R$ {:.2f}'.format(codigo, total))
+    
+if codigo == 103:
+    total = qtde * 5
+    print('CÒD |       ITEM      |  UNIT   |  VALOR')
+    print('{} |  Refrigerante   | R$ 7,30 |R$ {:.2f}'.format(codigo, total))
