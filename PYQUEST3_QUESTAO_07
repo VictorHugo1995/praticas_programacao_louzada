@@ -1,0 +1,6 @@
+peso   = float(input('Digite o valor do peso: '))
+altura = float(input('Digite o valor a altura(Exemplo 1.8 (utilize ponto)): '))
+
+imc = peso / (altura**2)
+
+print ('Peso = {}kg, Altura = {}m, o IMC é {:.2f}'.format(peso, altura, imc))
