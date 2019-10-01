@@ -1,0 +1,14 @@
+av1   = int(input('Digite a nota da AV-1: '))
+av2   = int(input('Digite a nota da AV-2: '))
+
+media = (av1 + av2) / 2
+
+if media >= 7:
+    print ('O valor da média foi {}, você está aprovado'.format(media))
+else:
+    avs = int(input('Digite a nota da AV-S: '))
+    media_pon = (av1 + av2 + (avs*2))/4
+    if media_pon >= 6:
+        print ('O valor da média foi {}, você está aprovado'.format(media_pon))
+    else:
+        print ('O valor da média foi {}, você está Reprovado'.format(media_pon))
