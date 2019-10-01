@@ -1,0 +1,17 @@
+salario = float(input('Digite o valor do salário bruto: '))
+sexo    = input('Digite o sexo do funcionário sendo (m para masculino e f para feminino) ')
+while True:
+    if sexo == 'm' or sexo == 'f':
+        break
+    else:
+        sexo    = input('Digite o sexo do funcionário sendo (m para masculino e f para feminino) ')
+if sexo == 'm':
+    sal_m = salario * 0.05
+    print ('O salário bruto é R$ {:.2f}'.format(salario))
+    print ('O desconto para homens é {:.1f} %'.format(sal_m))
+    print ('O salário líquido é R$ {:.2f}'.format(salario-sal_m))
+elif sexo == 'f':
+    sal_f = salario * 0.03
+    print ('O salário bruto é R$ {:.2f}'.format(salario))
+    print ('O desconto para mulheres é {:.1f} %'.format(sal_f))
+    print ('O salário líquido é R$ {:.2f}'.format(salario-sal_f))
