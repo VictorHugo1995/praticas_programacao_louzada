@@ -1,0 +1,34 @@
+print ('PEDRA, ṔAPEL OU TESOURA (2JOGADORES)')
+j1 = int(input('Jogador 1 - Digite uma das opções sendo, (1-Tesoura, 2-Pedra e 3-Papel: '))
+
+while True:
+    if j1 >=1 and j1 <=3:
+        break
+    else:
+        j1 = int(input('Jogador 1 - Digite uma das opções sendo, (1-Tesoura, 2-Pedra e 3-Papel: '))
+
+j2 = int(input('Jogador 2 - Digite uma das opções sendo, (1-Tesoura, 2-Pedra e 3-Papel: '))
+
+while True:
+    if j2 >=1 and j2 <=3:
+        break
+    else:
+        j2 = int(input('Jogador 1 - Digite uma das opções sendo, (1-Tesoura, 2-Pedra e 3-Papel: '))
+
+
+if j1 == j2:
+    print('Jogo empatado, tente novamente')
+else:
+    if j1 == 1 and j2 == 2:
+        print('Jogador 2 venceu (Pedra quebra tesoura!) ')
+    if j1 == 2 and j2 == 3:
+        print('Jogador 2 venceu (Papel envolve a pedra!) ')
+    if j1 == 3 and j2 == 1:
+        print('Jogador 2 venceu (Tesoura corta papel!) ')
+
+    if j1 == 2 and j2 == 1:
+        print('Jogador 1 venceu (Pedra quebra tesoura!) ')
+    if j1 == 3 and j2 == 2:
+        print('Jogador 1 venceu (Papel envolve a pedra!) ')
+    if j1 == 1 and j2 == 3:
+        print('Jogador 1 venceu (Tesoura corta papel!) ')
