@@ -1,0 +1,21 @@
+salario = float(input('Insira o valor do salário: R$ '))
+
+if salario < 2000:
+    gratif  = salario * 0.05
+    liquido = salario + gratif
+    print('Salário Informado: R$ {:.2f},\nGratificação, R$ {:.2f},\nSalário + Gratificação R$ {:.2f} '.format(salario, gratif, liquido))
+    
+if salario >= 2000 and salario <= 2500:
+    gratif  = salario * 0.1
+    liquido = salario + gratif
+    print('Salário Informado: R$ {:.2f},\nGratificação, R$ {:.2f},\nSalário + Gratificação R$ {:.2f} '.format(salario, gratif, liquido))
+    
+if salario > 2500 and salario <= 3000:
+    gratif  = salario * 0.15
+    liquido = salario + gratif
+    print('Salário Informado: R$ {:.2f},\nGratificação, R$ {:.2f},\nSalário + Gratificação R$ {:.2f} '.format(salario, gratif, liquido))
+    
+if salario > 3000:
+    gratif  = salario * 0.2
+    liquido = salario + gratif
+    print('Salário Informado: R$ {:.2f},\nGratificação, R$ {:.2f},\nSalário + Gratificação R$ {:.2f} '.format(salario, gratif, liquido))
