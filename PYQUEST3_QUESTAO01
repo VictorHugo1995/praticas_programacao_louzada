@@ -1,0 +1,6 @@
+tempo         = int(input('Qual foi o tempo da viagem em horas? '))
+velocidade    = int(input('Qual foi velocidade média durante a viagem? '))
+distancia     = tempo * velocidade
+litros_usados = distancia /12
+combustivel   = litros_usados*3.89
+print('A velocidade média foi {} km/h.\nO tempo gasto na viagem foram {} horas.\nA distância percorrida foi {:.2f} km.\nA quantidade de litros foi {:.2f} litros.\nO custo médio da viagem foi R$ {:.2f}' .format(velocidade, tempo, distancia, litros_usados, combustivel))
